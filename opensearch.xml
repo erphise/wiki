@@ -4,8 +4,8 @@
   <ShortName>Erphise Wiki</ShortName>
   <Description>Search Erphise Wiki</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://github.com/wiki/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://github.com/wiki/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://github.com/wiki/opensearch.xml" />
-  <moz:SearchForm>https://github.com/wiki/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://erphise.github.io/wiki/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://erphise.github.io/wiki/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://erphise.github.io/wiki/opensearch.xml" />
+  <moz:SearchForm>https://erphise.github.io/wiki/</moz:SearchForm>
 </OpenSearchDescription>
