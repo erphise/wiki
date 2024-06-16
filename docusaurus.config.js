@@ -61,15 +61,13 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/erphise/wiki/edit/main/',
+          // editUrl: 'https://github.com/erphise/wiki/edit/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/erphise/wiki/edit/main/',
+          editUrl: 'https://github.com/erphise/wiki/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -81,7 +79,7 @@ const config = {
           ignorePatterns: ['/tags/**'],
           filename: 'sitemap.xml',
           createSitemapItems: async (params) => {
-            const {defaultCreateSitemapItems, ...rest} = params;
+            const { defaultCreateSitemapItems, ...rest } = params;
             const items = await defaultCreateSitemapItems(rest);
             return items.filter((item) => !item.url.includes('/page/'));
           },
@@ -93,7 +91,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       algolia: {
         // The application ID provided by Algolia
@@ -129,7 +126,12 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          {
+            type: 'docSidebar',
+            sidebarId: 'windowsSidebar',
+            position: 'left',
+            label: 'Windows',
+          },
           {
             href: 'https://github.com/erphise/wiki',
             label: 'GitHub',

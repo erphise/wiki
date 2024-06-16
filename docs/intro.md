@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Introduction to my docs
+# Introduction to my test
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
