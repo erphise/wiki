@@ -63,12 +63,6 @@ const config = {
           // Remove this to remove the "edit this page" links.
           // editUrl: 'https://github.com/erphise/wiki/edit/main/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/erphise/wiki/edit/main/',
-        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -175,10 +169,6 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/erphise/wiki',
